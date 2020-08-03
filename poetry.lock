@@ -136,10 +136,10 @@ description = "Background Processing for Python 3."
 name = "dramatiq"
 optional = false
 python-versions = ">=3.5"
-version = "1.6.1"
+version = "1.9.0"
 
 [package.dependencies]
-prometheus-client = ">=0.2,<0.8"
+prometheus-client = ">=0.2"
 
 [package.dependencies.pika]
 optional = true
@@ -154,8 +154,8 @@ optional = true
 version = "0.1"
 
 [package.extras]
-all = ["redis (>=2.0,<4.0)", "pika (>=1.0,<2.0)", "watchdog (>=0.8,<0.9)", "pylibmc (>=1.5,<2.0)", "watchdog-gevent (0.1)"]
-dev = ["redis (>=2.0,<4.0)", "pika (>=1.0,<2.0)", "watchdog (>=0.8,<0.9)", "pylibmc (>=1.5,<2.0)", "watchdog-gevent (0.1)", "alabaster", "sphinx (<1.8)", "sphinxcontrib-napoleon", "flake8", "flake8-bugbear", "flake8-quotes", "isort", "bumpversion", "hiredis", "twine", "wheel", "pytest (<4)", "pytest-benchmark", "pytest-cov", "tox"]
+all = ["watchdog-gevent (0.1)", "watchdog (>=0.8,<0.9)", "pylibmc (>=1.5,<2.0)", "pika (>=1.0,<2.0)", "redis (>=2.0,<4.0)"]
+dev = ["watchdog-gevent (0.1)", "watchdog (>=0.8,<0.9)", "pylibmc (>=1.5,<2.0)", "pika (>=1.0,<2.0)", "redis (>=2.0,<4.0)", "alabaster", "sphinx (<1.8)", "sphinxcontrib-napoleon", "flake8", "flake8-bugbear", "flake8-quotes", "isort", "bumpversion", "hiredis", "twine", "wheel", "pytest (<4)", "pytest-benchmark", "pytest-cov", "tox"]
 memcached = ["pylibmc (>=1.5,<2.0)"]
 rabbitmq = ["pika (>=1.0,<2.0)"]
 redis = ["redis (>=2.0,<4.0)"]
@@ -917,7 +917,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pathlib2", "contextlib2", "unittest2"]
 
 [metadata]
-content-hash = "b1463f2f5a4fc062d027474cd60f57d9004f98bcfb0b7f1daff6c2466e8b083a"
+content-hash = "50ae0ac69d1e1dcd9901ab9c4ce5d2d23f8c9cb9fa0550ba08b14bb16fcfd224"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -1028,8 +1028,8 @@ cycler = [
     {file = "cycler-0.10.0.tar.gz", hash = "sha256:cd7b2d1018258d7247a71425e9f26463dfb444d411c39569972f4ce586b0c9d8"},
 ]
 dramatiq = [
-    {file = "dramatiq-1.6.1-py3-none-any.whl", hash = "sha256:ce612dcc5a7fb51283be365b6e6bf4346f8a24ec1ce5b714088d388a82bad41d"},
-    {file = "dramatiq-1.6.1.tar.gz", hash = "sha256:1b198b9283c76b37c7f4b2eca073b0cb360a21b86a4d722209ea43819f8ab21b"},
+    {file = "dramatiq-1.9.0-py3-none-any.whl", hash = "sha256:360cd436a434a513c87a9769943543c1d065835e3fa0b01f96c4fdd959bfa1c3"},
+    {file = "dramatiq-1.9.0.tar.gz", hash = "sha256:8112941ab2eda4f0288bacd137a991f9b1b1c600fe3dd5960eaba4256c873839"},
 ]
 falcon = [
     {file = "falcon-2.0.0-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:733033ec80c896e30a43ab3e776856096836787197a44eb21022320a61311983"},
